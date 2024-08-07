@@ -1,6 +1,6 @@
 const inputBox = document.querySelector(".input-box");
 const listItems = document.querySelector(".list-items");
-
+const clearBtn  = document.getElementById('clear-btn');
 function addTask() {
     if (inputBox && inputBox.value === '') {
         alert("You must write something");
@@ -15,6 +15,11 @@ function addTask() {
     inputBox.value = '';
     saveData();
 }
+
+clearBtn.addEventListener('click',()=>{
+    localStorage.removeItem("data");
+    location.reload();
+})
 
 listItems.addEventListener("click", function(e) {
     if (e.target.tagName === 'LI') {

@@ -7,7 +7,6 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#156777,#e45a5ae5);
     padding: 10px;
 }
 .todo{
@@ -40,6 +39,7 @@ button{
     background-color: rgba(55, 195, 113, 0.721);
     color: white;
     font-weight: 600;
+    border-radius: 2%;
     cursor: pointer;
 }
 ul li{
@@ -81,4 +81,12 @@ ul li span{
 }
 ul li span:hover{
     background:#edeef0;
+}
+#clear-btn{
+    background-color: #555;
+}
+.container {
+    background-image: url('to-do image.webp');
+    background-size: cover;
+    background-position: center;
 }
